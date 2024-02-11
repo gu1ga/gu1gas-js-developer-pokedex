@@ -19,8 +19,6 @@ function pad(number, padSize = 3){
 
 function showPokemonInfo(number){
     pokeApi.getPokemon(number).then((pokemon) => {
-
-            console.log(pokemon.eggGroup)
             const modalHTML = 
             `<div class="window ${pokemon.mainType}">
             <div  class="detail ${pokemon.mainType}">
